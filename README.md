@@ -19,7 +19,7 @@ AngularCLI - zbiór polecen do budowania aplikacji Angular
 
 ##Architektura##
 <br>
-<img src="./architektura.png" width="50%" height="50%">
+<img src="https://github.com/P3droCi7/angular_cheat_sheet/blob/d32f64205bbe27e53c2976a01fa7862e6c83bc3f/architektura.PNG" width="50%" height="50%">
 
 ##Komendy Angular##
 
