@@ -31,7 +31,7 @@ AngularCLI - zbiór polecen do budowania aplikacji Angular
 
 >ng g directive, service, pipe
 
->ng install - instalacja modułów node do startu app i aktualizacja wersji
+>npm install - instalacja modułów node do startu app i aktualizacja wersji
 
 >ng serve - wystawienie aplikacji na porcie - domyslny lokalhost:4200
 
