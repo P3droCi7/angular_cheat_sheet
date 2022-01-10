@@ -3,12 +3,9 @@
 #Narzędzia Angular##
 
 <ul>
-<li>Node.js - srodowisko uruchomieniowe javascript poza przeglądarką, pozwala instalowac biblioteki, angular-CLI itp... 
-
+<li>Node.js - srodowisko uruchomieniowe javascript poza przeglądarką, pozwala instalowac biblioteki, angular-CLI itp... (czesc node to -> npm)
+  
 >node -v; npm -v
-</li>
-<li>
-npm
 </li>
 <li>
 AngularCLI - zbiór polecen do budowania aplikacji Angular
@@ -23,7 +20,7 @@ AngularCLI - zbiór polecen do budowania aplikacji Angular
 
 ##Komendy Angular##
 
->ng g new <nazwa> --skip-install - nowy projekt bez pobrania node_modules
+>ng new "nazwa" --skip-install - nowy projekt bez pobrania node_modules
 
 >ng g component <path>/<component_name>
 
