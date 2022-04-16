@@ -53,3 +53,7 @@ AngularCLI - zbiór polecen do budowania aplikacji Angular
 <li>package.json - plik versji dependencji (^ - oznacza pobranie zawsze najnowszej wersji)</li>
 <li>tsconfig.json - plik konfiguracyjny projektu</li>
 </ul>
+  
+##Komendy Angular##
+<br>
+Pomocne biblioteki - <a href="https://material.angular.io/">Angular Material</a>
