@@ -39,6 +39,12 @@ AngularCLI - zbiór polecen do budowania aplikacji Angular
 <li>src</li>
 <ul>
 <li>app - tutaj lądują moduly, komponenty, dyrektywy (root component -automatycznie stworzony posiada pliki styli .css ; .html oraz .ts) dodatkowo plik .ts dla calego modułu (definicja całej aplikacji)</li>
+<li>models - katalog z modelami obiektów Angular (export interface nazwa_klasy)
+
+>export interface person {
+>id: number;
+>name: string;}
+</li>
 <li>assets - obrazki, ikony, fonty i style globalne </li>
 <li>environments - ustawienia srodowiska dla bardziej rozbudowanych aplikacji</li>
 <li>favicon.ico - ikona wyswietlana w pasku</li>
@@ -54,6 +60,69 @@ AngularCLI - zbiór polecen do budowania aplikacji Angular
 <li>tsconfig.json - plik konfiguracyjny projektu</li>
 </ul>
   
-##Komendy Angular##
-<br>
-Pomocne biblioteki - <a href="https://material.angular.io/">Angular Material</a>
+##Biblioteki Angular##
+<ul>
+<li>Pomocne biblioteki - <a href="https://material.angular.io/">Angular Material</a></li>
+</ul>
+
+##Mechanizmy Angular##
+<ul>
+<li>Dyrektywy
+<ul>
+<li>*ngFor
+
+```text
+<tr *ngFor="let person of persons" class="row">
+<td> {{ person.name }}</td>
+```
+</li>
+<li>*ngIf</li>
+</ul>
+
+</li>
+
+<li>Eksporty i importy modułów, komponentów! - Angular nie tworzy połączeń automatycznie, należy: 
+<ul>
+<li>zawsze zaimportować nowo tworzony moduł do modułu głownego</li>
+<li>weksportować child komponent w nowo tworzonym module - aby był widoczny dla modułu głównego</li>
+</ul>
+
+</li>
+</ul>
+
+##Inne komendy##
+<ul>
+<li>Dodanie Bootstrapa do aplikacji Angular. Po pobraniu nalezy przejść do pliku angular.json i podpiąć bootstrap przy parametrze "styles": -> kolejność styli według priorytetu
+ ["../node_modules/bootstrap/dist/css/bootstrap.min.css"], ...
+
+>npm install bootstrap@"version" --save-dev (flaga służy dodaniu biblioteki bootstrap do pliku package.json )
+
+```text
+Przykładowe wykorzystanie bootstrap:
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+        <thead>
+          <tr>
+            <th>name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let person of persons" class="row">
+            <td> {{ person.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <button (click)="showSomething()" class="btn btn-primary btn-sm float-right">
+        SHOW SOMETHING
+      </button>
+    </div>
+  </div>
+```
+</li>
+<li>next</li>
+</ul>
