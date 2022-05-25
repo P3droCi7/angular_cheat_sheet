@@ -69,14 +69,31 @@ AngularCLI - zbiór polecen do budowania aplikacji Angular
 <ul>
 <li>Dyrektywy
 <ul>
-<li>*ngFor
+<li>*ngFor (iteracja na widoku po jakiejś np. liście)
 
 ```text
 <tr *ngFor="let person of persons" class="row">
 <td> {{ person.name }}</td>
 ```
 </li>
-<li>*ngIf</li>
+<li>*ngIf (warunkowe ukrywanie drzewa DOM - html)
+
+```text
+<table *ngIf="people.lenght > 0; else noPersonInfo">
+<ng-template #noPersonInfo>
+<div class="xyz-zyx">
+<p>No People</p>
+</div>
+</ng-template>
+```
+</li>
+<li>[ngClass] (dodawanie warunkowe klass css)
+
+```text
+<td [ngClass]="{'row-avaiable': person.isAvaiable}">{{person.name}}</td>
+row-avaiable - css class
+```
+</li>
 </ul>
 
 </li>
